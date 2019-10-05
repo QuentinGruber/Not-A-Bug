@@ -151,7 +151,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Gamelogic.cpp" />
     <ClCompile Include="Not A Bug.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UsefulFunc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

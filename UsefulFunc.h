@@ -9,7 +9,7 @@ void print_debug(string str) {
 
 
 void print_Dialog(string str,int speed) {
-	for (int i = 0;i < str.length(); i++)
+	for (unsigned int i = 0;i < str.length(); i++)
 	{
 		cout << str[i];
 		Sleep(speed);

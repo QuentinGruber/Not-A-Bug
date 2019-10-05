@@ -20,8 +20,12 @@ void BgBlinking(int BlinkingSpeed) {
 void BugAppear() {
 	system("color C1");  // make bg red
 	print("99% Loading\n");
-	while (true) {
+	for (int i = 0; i < 30; i++) { 
 		BgBlinking(100);
 		print("[FATAL ERROR] \n");
 	}
+	print("Reebooting...");
+	Sleep(2000);
+	system("color 01"); // Black screen
+	system("CLS");
 }

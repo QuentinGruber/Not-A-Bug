@@ -20,3 +20,9 @@ void print_Dialog(string str,int speed) {
 void print(string str) {
 	cout << str;
 }
+
+
+void WaitKeyPress() {
+	string wait;
+	cin >> wait;
+}

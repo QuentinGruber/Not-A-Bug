@@ -13,13 +13,20 @@ void init_p1() {
 	print_Dialog("Hello World!\n",100);
 	print_Dialog("Wanna install the best game of all time?", 100);
 	WaitKeyPress();
+	print_Dialog("Don't care about your answer i install it.",10);
+	Sleep(1500);
 	system("CLS");
 	FakeLoading();
 	BugAppear();
-
 	}
 
 
 /*
 Part 2 were doing stuff with the bug that wanna explain to US that is he's not a bug.
 */
+
+void init_p2() {
+
+
+
+}

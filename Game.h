@@ -22,7 +22,7 @@ void BugAppear() {
 	print("99% Loading\n");
 	for (int i = 0; i < 30; i++) { 
 		BgBlinking(100);
-		print("[FATAL ERROR] \n");
+		print("[FATAL ERROR] BUG DETECTED IN THE INSTALLATION ABORT! \n");
 	}
 	print("Reebooting...");
 	Sleep(2000);

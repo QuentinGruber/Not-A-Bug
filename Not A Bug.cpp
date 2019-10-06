@@ -5,5 +5,5 @@
 
 int main()
 {
-	init_p1();
+	init_p2();
 }

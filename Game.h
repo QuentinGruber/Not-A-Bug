@@ -1,5 +1,3 @@
-
-
 void FakeLoading() {  // display a fake loading
 
 	for (int i = 0; i < 100; i++) // display 99% at last
@@ -28,4 +26,8 @@ void BugAppear() {
 	Sleep(2000);
 	system("color 01"); // Black screen
 	system("CLS");
+}
+
+void CreateDir() {
+	system("mkdir \ NO PASSORD HERE");
 }

@@ -50,5 +50,6 @@ void init_p2() {
 	print_Dialog("I have hide a secret password on your computer Desktop.\n", 100);
 	print_Dialog("A bug would never find it ;)\n", 100);
 	print("Enter Password:\n");
+	CreateDir();
 	cin >> answer;
 }

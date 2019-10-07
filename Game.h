@@ -29,5 +29,19 @@ void BugAppear() {
 }
 
 void CreateDir() {
-	system("mkdir \ NO PASSORD HERE");
+	if (dirExists("\NO_PASSWORD_HERE") == false) {
+		system("mkdir \ NO_PASSWORD_HERE");
+	}
+	ofstream myfile;
+	myfile.open("GtA6.txt");
+	myfile << "ow lol u juici bug , your not gonna get the password hehe!";
+	myfile.close();
+}
+
+void Update_GTa6(string password) {
+	ofstream myfile;
+	myfile.open("GtA6.txt");
+	myfile << "The Password is "+password+"2";
+	myfile.close();
+
 }

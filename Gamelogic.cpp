@@ -121,7 +121,7 @@ end
 void init_p4() {
 	system("cls");
 	system("color B1"); // set color bg for the level
-	print_Dialog("A short game made by Kbent1_dev \n", 100);
+	print_Dialog("A short game made by @Kbent1_dev \n", 100);
 	print_Dialog("for the Weekly Game Jam - Week 117\n", 100);
 	print_Dialog("Week 117 Theme: 'Not a Bug'\n", 100);
 	print_Dialog("Thanks for playing :D !",100);

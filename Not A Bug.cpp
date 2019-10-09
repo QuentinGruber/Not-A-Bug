@@ -3,7 +3,10 @@
 
 #include "Gamelogic.cpp"
 
-int main()
-{
+int main(){
+
+	init_p1();
 	init_p2();
+	init_p3();
+	init_p4();
 }

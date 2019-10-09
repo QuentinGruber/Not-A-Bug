@@ -4,6 +4,7 @@
 #include "UsefulFunc.h"
 #include <Windows.h>
 #include "Game.h"
+#pragma comment(lib, "Winmm.lib")  // for song
 
 /*
 Part 1 is the introduction where the bug appear.
@@ -19,18 +20,18 @@ void init_p1() {
 	system("CLS");
 	FakeLoading();
 	BugAppear();
-	system("color 00");
 	}
 
 
 /*
-Part 2 were doing stuff with the bug that wanna explain to US that is he's not a bug.
+Part 2 is introduction to the bug who ask us to find a password
 */
 
 void init_p2() {
 
 	string answer; // init answer string
-	system("color 00"); // need to remove (usuless if p1 is launched)
+	system("color 00");
+	system("CLS");  // need to clear cmd to apply font color change
 
 	// Dialogs
 	Sleep(5000);
@@ -49,8 +50,8 @@ void init_p2() {
 	Sleep(500);
 	print_Dialog("I need to test you before we continue to talk\n", 100);
 	Sleep(500);
-	print_Dialog("I have hide a secret password on your computer Desktop.\n", 100);
-	print_Dialog("A bug would never find it ;)\n", 100);
+	print_Dialog("I have hide a secret password in my folder.\n", 100);
+	print_Dialog("A bug would never find it ;) :\n", 100);
 
 	// find the password
 	print("Enter Password:\n");
@@ -67,12 +68,66 @@ void init_p2() {
 		Wrong_answer_attemps++; 
 
 		if (Wrong_answer_attemps > 5) {  // if as more than 5 attemps (looser)
-			print_Dialog("WRONG PASSWORD maybe look inside gta6.txt *cough* *cough* ;)\n", 100);
+			print_Dialog("WRONG PASSWORD maybe look inside gta6.txt *cough* *cough* ;) :\n", 100);
 			cin >> answer;
 		}
 		else {
-			print_Dialog("WRONG PASSWORD try again ;)\n", 100);
+			print_Dialog("WRONG PASSWORD try again ;) :\n", 100);
 			cin >> answer;
 		}
 	}
+}
+
+/*
+Part 3 
+*/
+
+void init_p3() {
+	system("CLS");
+	Sleep(2000);
+	print_Dialog("Ok maybe your ", 100);
+	print_Dialog("a good bug.\n", 50);
+	Sleep(1000);
+	print_Dialog("i will destroy you...\n", 100);
+	system("color a"); // green color
+
+	int dirscount = 0;
+	while (true) {
+		dirscount++;
+		system("dir/s");
+		if (dirscount > 20) {
+			break;
+		}
+	}
+	system("CLS");
+	print_Dialog("HOW DO YOU SURVIVE DIR/S ????\n", 50);
+	Sleep(1000);
+	print_Dialog("And WHAT are you doing with this???", 50);
+	Sleep(500);
+	for (int i = 0; i < 10; i++) {  // open 10 command prompt
+		system("start");
+	}
+
+	print(":-)\n");
+	string answer;
+	cin >> answer;
+
+	print_Dialog("oh your still there...\n", 100);
+	print_Dialog("You know i'm not a bug...\n", 100);
+	print_Dialog("i'm a ", 1000);
+
+}
+
+/*
+end
+*/
+
+void init_p4() {
+	system("cls");
+	system("color B1"); // set color bg for the level
+	print_Dialog("A short game made by Kbent1_dev \n", 100);
+	print_Dialog("for the Weekly Game Jam - Week 117\n", 100);
+	print_Dialog("Week 117 Theme: 'Not a Bug'\n", 100);
+	print_Dialog("Thanks for playing :D !",100);
+	WaitKeyPress();
 }

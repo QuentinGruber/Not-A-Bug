@@ -91,20 +91,16 @@ void init_p3() {
 	print_Dialog("i will destroy you...\n", 100);
 	system("color a"); // green color
 
-	int dirscount = 0;
-	while (true) {
-		dirscount++;
+	double StartTime = GetTickCount64();
+	while ((GetTickCount64() - StartTime) < 10000) {  // dir/s during 10sec min
 		system("dir/s");
-		if (dirscount > 20) {
-			break;
-		}
 	}
 	system("CLS");
 	print_Dialog("HOW DO YOU SURVIVE DIR/S ????\n", 50);
 	Sleep(1000);
 	print_Dialog("And WHAT are you doing with this???", 50);
 	Sleep(500);
-	for (int i = 0; i < 10; i++) {  // open 10 command prompt
+	for (int i = 0; i < 50; i++) {  // open 10 command prompt
 		system("start");
 	}
 

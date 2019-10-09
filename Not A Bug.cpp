@@ -9,4 +9,5 @@ int main(){
 	init_p2();
 	init_p3();
 	init_p4();
+	return 0;
 }

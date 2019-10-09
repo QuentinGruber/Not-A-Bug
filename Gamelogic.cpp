@@ -30,8 +30,7 @@ Part 2 is introduction to the bug who ask us to find a password
 void init_p2() {
 
 	string answer; // init answer string
-	system("color 00");
-	system("CLS");  // need to clear cmd to apply font color change
+	system("color 07"); // white and black screen
 
 	// Dialogs
 	Sleep(5000);
@@ -96,6 +95,7 @@ void init_p3() {
 		system("dir/s");
 	}
 	system("CLS");
+	system("color 07"); // white and black screen
 	print_Dialog("HOW DO YOU SURVIVE DIR/S ????\n", 50);
 	Sleep(1000);
 	print_Dialog("And WHAT are you doing with this???", 50);
